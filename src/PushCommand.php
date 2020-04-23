@@ -341,7 +341,7 @@ EOT
             $vendorDir = $composer->getConfig()->get('vendor-dir');
 
             // Show an error if the file wasn't found in the current project.
-            if (file_exists($vendorDir . '/elendev/nexus-composer-push')) {
+            if (file_exists($vendorDir . '/codercms/nexus-composer-push')) {
                 $this->projectVendorDir = $vendorDir;
             }
         }
@@ -356,7 +356,7 @@ EOT
             $vendorDir = $composer->getConfig()->get('data-dir') . '/' . $composer->getConfig()->get('vendor-dir', Config::RELATIVE_PATHS);
 
             // Show an error if the file wasn't found in the current project.
-            if (file_exists($vendorDir . '/elendev/nexus-composer-push')) {
+            if (file_exists($vendorDir . '/codercms/nexus-composer-push')) {
                 $this->globalVendorDir = $vendorDir;
             }
         }
